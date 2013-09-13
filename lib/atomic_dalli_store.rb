@@ -4,7 +4,9 @@ require 'active_support/cache/dalli_store23'
 require 'atomic_store'
 
 class AtomicDalliStore < ActiveSupport::Cache::DalliStore
-  RAW_ARG = { :raw => true }
-
   include AtomicStore
+
+  def raw_arg
+    @raw_arg ||= { :raw => true }
+  end
 end

@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.email       = ["nel@w3fu.com"]
   s.homepage    = "https://github.com/nel/atomic_mem_cache_store"
   s.summary     = %q{Rails memcached store with atomic expiration}
-  s.description = %q{Rails memcached store optimized for the thundering herb issue. This limit cache recalculation to a single process while as long as key is not swept by LRU. Drop-in replacement of Rails memcached store.}
+  s.description = %q{Rails memcached store optimized for the thundering herd issue. This limit cache recalculation to a single process while as long as key is not swept by LRU. Drop-in replacement of Rails memcached store.}
 
   s.rubyforge_project = "atomic_mem_cache_store"
 

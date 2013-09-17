@@ -7,4 +7,8 @@ class AtomicMemCacheStore < ActiveSupport::Cache::CompressedMemCacheStore
   def raw_arg
     true
   end
+
+  def options_for_parent
+    @options_for_parent ||= { :raw => false }
+  end
 end
